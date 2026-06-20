@@ -3,82 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <title>Welcome to GameGuides</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="styles/style.css">
     </head>
 
     <body>
-        <style>
-      body{
-        margin: 20px;
-        font-family: Arial, sans-serif;
-        background-image: url(Images/Mainpage.png);
-        background-size: cover;      /* fills the screen */
-        background-position: center; /* centers the image */
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-      .main-box {
-        max-width: 1200px;   /* controls text width */
-        text-align: left;  /* centers text */
-        margin: 80px auto;     /* centers horizontally */
-
-        padding: 20px;
-
-        background: rgba(0, 0, 0, 0.75); /* black with transparency */
-        color: white;
-
-        border-radius: 10px;
-      }
-      .ds-btn {
-        top: 20px;
-        left: 20px;
-
-        padding: 10px 22px;
-        font-family: 'Cinzel', serif; /* very Souls-like */
-        font-size: 14px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-
-        color: #e6e6e6;
-        background: rgba(0, 0, 0, 0.55);
-
-        border: 1px solid rgba(255, 255, 255, 0.25);
-        border-radius: 4px;
-
-        text-decoration: none;
-        transition: all 0.3s ease;
-
-        position: relative; /* IMPORTANT */
-        width: 100%;
-        max-width: 900px;
-        width: fit-content;
-        display: block;
-        margin-bottom: 8px;
-        font-weight: bold;
-        color: white;
-        text-decoration: none;
-      }
-        .guide-list {
-        list-style: none;
-        padding: 0;
-      }
-        .guide-item {
-        display: flex;
-        gap: 20px;
-        margin-bottom: 30px;
-        align-items: flex-start;
-      }
-       .guide-item img {
-       border-radius: 6px;
-       flex-shrink: 0;
-      }
-       .guide-text {
-       max-width: 600px;
-       display: flex;
-       flex-direction: column;
-       align-items: flex-start;
-      }
-
-     </style>
+        <div class="container">
+        <div class="left-sidebar">
+          <div class="nav-panel">
+            <h3><i class="fas fa-bars"></i> Navigation</h3>
+            <ul class="nav-list">
+              <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+              <li><a href="DarkSouls1.html"><i class="fas fa-crown"></i> Dark Souls 1</a></li>
+              <li><a href="DarkSouls3.html"><i class="fas fa-fire"></i> Dark Souls 3</a></li>
+              <li><a href="DevilMayCry3.html"><i class="fas fa-demon"></i> Devil May Cry</a></li>
+              <li><a href="https://www.gameguides.com/doom"><i class="fas fa-gun"></i> DOOM</a></li>
+              <li><a href="https://www.gameguides.com/doom-eternal"><i class="fas fa-bolt"></i> DOOM Eternal</a></li>
+              <li><a href="https://www.gameguides.com/monsterhunter-rise"><i class="fas fa-crosshairs"></i> Monster Hunter Rise</a></li>
+              <li><a href="https://www.gameguides.com/monsterhunter-rise-sunbreak"><i class="fas fa-sun"></i> MH Rise: Sunbreak</a></li>
+              <li><a href="https://www.gameguides.com/monsterhunter-world"><i class="fas fa-globe"></i> Monster Hunter World</a></li>
+              <li><a href="https://www.gameguides.com/monsterhunter-world-iceborne"><i class="fas fa-snowflake"></i> MH World: Iceborne</a></li>
+              <li><a href="https://www.gameguides.com/warhammer40k-spacemarine2"><i class="fas fa-shield"></i> Warhammer 40K</a></li>
+            </ul>
+          </div>
+        </div>
         <div class="main-box">
          <h1>GameGuides</h1>
          <p>This page is dedicated to guide players in their future adventures.</p>
@@ -90,7 +38,7 @@
              <img src= "Images/Sq_nswitch_darksoulsremastered.webp" width="300" height="300">
 
              <div class="guide-text">
-              <a href ="DarkSouls1.html" class="ds-btn">Dark Souls 1</a>
+              <a href ="DarkSouls1.html" class="ds-btn"><i class="fas fa-crown"></i> Dark Souls 1</a>
                <p>
                Dark Souls 1 is set in Anor Londo, Land of the Gods, home of Gwyn of Sunlight,<br>
                after defeating the Dragons he set an order and usher in the age of flame<br> 
@@ -106,7 +54,7 @@
               <img src= "Images/Dark_souls_3_cover_art.jpg" width="300" height="350">
 
               <div class="guide-text">
-               <a href="DarkSouls3.html" class="ds-btn">Dark Souls 3</a>
+               <a href="DarkSouls3.html" class="ds-btn"><i class="fas fa-fire"></i> Dark Souls 3</a>
                 <p>
                 Dark Souls 3 is set in Lothric, now the world is in shambles , you, The Ashen One, must rekindle the flame<br>
                 once again and continue the age of fire or led humanity in the age of darkness.<br>
@@ -118,9 +66,9 @@
             <hr>
 
            <li class="guide-item">
-             <img src = "Images/Dmc1.webp" width="200" height="300">
+             <img src = "Images/Dmc1.webp" width="300" height="400">
              <div class="guide-text">
-               <a href="DevilMayCry3.html" class="ds-btn">Devil May Cry</a>
+               <a href="DevilMayCry3.html" class="ds-btn"><i class="fas fa-demon"></i> Devil May Cry</a>
                <p>
                 this Game is about the legendary demon knight, Sparda,<br>
                 he sealed the world of demons away from the the world of man.<br>
@@ -129,18 +77,105 @@
               <div\>
            </li>
 
-            <li><a href="https://www.gameguides.com/doom">DOOM</a></li>
+            <hr>
 
-            <p>
+            <li class="guide-item">
+              <img src = "Images/DOOM-2016.jpg" width="300" height="300">
+              <div class="guide-text">
+               <a href="https://www.gameguides.com/doom" class="ds-btn"><i class="fas fa-gun"></i> DOOM</a>
+               <p>
+                DOOM is a first-person shooter game, where you play as the Doom Slayer<br>
+                and fight against the forces of Hell who have invaded Mars.<br>
+               </p>
+              </div>
+            </li>
 
-            </p>
-           <li><a href="https://www.gameguides.com/doom-eternal">DOOM Eternal</a></li>
-           <li><a href="https://www.gameguides.com/monsterhunter-rise">Monster Hunter Rise</a></li>
-           <li><a href="https://www.gameguides.com/monsterhunter-rise-sunbreak">Monster Hunter Rise: Sunbreak</a></li>
-           <li><a href="https://www.gameguides.com/monsterhunter-world">Monster Hunter World</a></li>
-           <li><a href="https://www.gameguides.com/monsterhunter-world-iceborne">Monster Hunter World: Iceborne</a></li>
-           <li><a href="https://www.gameguides.com/warhammer40k-spacemarine2">Warhammer 40,000: Space Marine 2</a></li>
+           <li class="guide-item">
+            <img src = "Images/DOOM-Eternal.jpg" width="300" height="450">
+              <div class="guide-text">
+               <a href="https://www.gameguides.com/doom-eternal" class="ds-btn"><i class="fas fa-bolt"></i> DOOM Eternal</a>
+               <p>
+                DOOM Eternal is the sequel to DOOM, the game is set in a post-apocalyptic Earth, where you play as the Doom Slayer<br>
+                and fight against the forces of Hell who have invaded Earth.<br>
+               </p>
+              </div>
+           </li>
+
+           <li class="guide-item">
+            <img src = "Images/Monster-Hunter-Rise.jpg" width="300" height="400">
+              <div class="guide-text">
+               <a href="https://www.gameguides.com/monsterhunter-rise" class="ds-btn"><i class="fas fa-crosshairs"></i> Monster Hunter Rise</a>
+               <p>
+                Monster Hunter Rise is a action-adventure game, where you play as a hunter of kamura village 
+                and battle different monsters across various locations.<br>
+               </p>
+              </div>
+           </li>
+
+           <li class="guide-item">
+            <img src = "Images/Monster-Hunter-Rise-Sunbreak.jpg">
+              <div class="guide-text">
+               <a href="https://www.gameguides.com/monsterhunter-rise-sunbreak" class="ds-btn"><i class="fas fa-sun"></i> Monster Hunter Rise: Sunbreak</a>
+               <p>
+                Monster Hunter Rise: Sunbreak is the expansion pack for Monster Hunter Rise, adding new content and features.<br>
+               </p>
+              </div>
+           </li>
+
+           <li class="guide-item">
+            <img src = "Images/Monster-Hunter-World.jpg">
+              <div class="guide-text">
+               <a href="https://www.gameguides.com/monsterhunter-world" class="ds-btn"><i class="fas fa-globe"></i> Monster Hunter World</a>
+               <p>
+                Monster Hunter World is a action-adventure game, where you play as a hunter and investigate the causing of elder crossing while exploring the new world 
+                and battling different monsters regarding your weapon of style.<br>
+               </p>
+              </div>
+           </li>
+
+           <li class="guide-item">
+            <img src = "Images/Monster-Hunter-World-Iceborne.jpg">
+              <div class="guide-text">
+               <a href="https://www.gameguides.com/monsterhunter-world-iceborne" class="ds-btn"><i class="fas fa-snowflake"></i> Monster Hunter World: Iceborne</a>
+               <p>
+                Monster Hunter World: Iceborne is the expansion pack for Monster Hunter World, adding new content and features.<br>
+               </p>
+              </div>
+           </li>
+
+           <li class="guide-item">
+            <img src = "Images/Warhammer-40K-Space-Marine-2.jpg">
+              <div class="guide-text">
+               <a href="https://www.gameguides.com/warhammer40k-spacemarine2" class="ds-btn"><i class="fas fa-shield"></i> Warhammer 40,000: Space Marine 2</a>
+               <p>
+                Warhammer 40,000: Space Marine 2 is a action-adventure game, where you play as a Space Marine and 
+                fight against the forces of Chaos whilde not getting eaten by tyranids.<br>
+               </p>
+              </div>
+           </li>
          </ul>
+        </div>
+
+        <div class="right-sidebar">
+          <div class="sidebar-panel featured-guide">
+            <h3><i class="fas fa-star"></i> Featured Guide</h3>
+            <img src="Images/Dark_souls_3_cover_art.jpg" alt="Dark Souls 3">
+            <h4>Dark Souls 3</h4>
+            <p>Dive into Lothric and master the art of combat. Join the Ashen One on an epic journey through a dying world.</p>
+            <a href="DarkSouls3.html">Read Guide</a>
+          </div>
+          <div class="sidebar-panel">
+            <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+            <div class="social-links">
+              <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://discord.com" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+              <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="https://twitch.tv" target="_blank" title="Twitch"><i class="fab fa-twitch"></i></a>
+              <a href="https://reddit.com" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+              <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
         </div>
     </body>   
 </html>
